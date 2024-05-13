@@ -16,7 +16,6 @@ fun MyAppPortrait() {
             bottomBar = { PassWrdBottomNavigation()}
         ) { padding ->
             HomeScreen(Modifier.padding(padding))
-
         }
     }
 }

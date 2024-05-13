@@ -54,7 +54,6 @@ fun FavoriteCollectionCard (
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE )
 @Composable
 fun FavoriteCollectionCardPreview(
-    modifier: Modifier = Modifier
 ){
     PassWrdTheme {
         FavoriteCollectionCard(
