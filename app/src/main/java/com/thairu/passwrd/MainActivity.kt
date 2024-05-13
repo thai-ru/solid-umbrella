@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.thairu.passwrd.ui.theme.PassWrdTheme
+import com.thairu.passwrd.views.HomeScreen
 import com.thairu.passwrd.views.helpers.AlignYourBodyRow
 import com.thairu.passwrd.views.helpers.FavoriteCollectionCard
 import com.thairu.passwrd.views.helpers.FavoriteCollectionGrid
@@ -25,21 +26,9 @@ class MainActivity : ComponentActivity() {
             PassWrdTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
-                    modifier = Modifier.padding(8.dp),
                     color = MaterialTheme.colorScheme.inverseOnSurface
                 ) {
-                    Column {
-                        SearchBar(
-                            modifier = Modifier.padding(bottom = 8.dp)
-                        )
-
-                        AlignYourBodyRow(
-                            modifier = Modifier.padding(vertical = 12.dp)
-                        )
-
-                        FavoriteCollectionGrid()
-                    }
-
+                    HomeScreen()
                 }
             }
         }
