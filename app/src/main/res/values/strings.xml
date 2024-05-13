@@ -3,4 +3,10 @@
     <string name="placeholder_search">Search…</string>
     <string name="ab1_inversions">Inversions</string>
     <string name="ab1_nature_meditations">Nature Meditations</string>
+    <string name="tabata">Tabata</string>
+    <string name="stretching">Stretching</string>
+    <string name="pre_natal_yoga">Pre-natal Yoga</string>
+    <string name="quick_yoga">Quick Yoga</string>
+    <string name="align_your_body">Align your Body</string>
+    <string name="favorite_collections">Favorite Collections</string>
 </resources>
