@@ -3,21 +3,10 @@ package com.thairu.passwrd
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.thairu.passwrd.ui.theme.PassWrdTheme
-import com.thairu.passwrd.views.HomeScreen
-import com.thairu.passwrd.views.helpers.AlignYourBodyRow
-import com.thairu.passwrd.views.helpers.FavoriteCollectionCard
-import com.thairu.passwrd.views.helpers.FavoriteCollectionGrid
-import com.thairu.passwrd.views.helpers.SearchBar
+import com.thairu.passwrd.views.MyAppPortrait
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,25 +17,9 @@ class MainActivity : ComponentActivity() {
                 Surface(
                     color = MaterialTheme.colorScheme.inverseOnSurface
                 ) {
-                    HomeScreen()
+                    MyAppPortrait()
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    PassWrdTheme {
-        Greeting("Android")
     }
 }
