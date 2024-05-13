@@ -36,14 +36,14 @@ fun FavoriteCollectionCard (
             modifier = Modifier.width(255.dp)
         ) {
             Image(
-                painter = painterResource(R.drawable.foliage),
+                painter = painterResource(drawable),
                 contentDescription = null,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
                     .size(80.dp)
             )
             Text(
-                text = stringResource(R.string.ab1_nature_meditations),
+                text = stringResource(text),
                 style = MaterialTheme.typography.bodyMedium,
                 modifier = Modifier.padding(horizontal = 16.dp)
                 )

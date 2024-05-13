@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 import com.thairu.passwrd.ui.theme.PassWrdTheme
 import com.thairu.passwrd.views.helpers.AlignYourBodyRow
 import com.thairu.passwrd.views.helpers.FavoriteCollectionCard
+import com.thairu.passwrd.views.helpers.FavoriteCollectionGrid
 import com.thairu.passwrd.views.helpers.SearchBar
 
 class MainActivity : ComponentActivity() {
@@ -36,10 +37,7 @@ class MainActivity : ComponentActivity() {
                             modifier = Modifier.padding(vertical = 12.dp)
                         )
 
-                        FavoriteCollectionCard(
-                            drawable = R.drawable.foliage,
-                            text = R.string.ab1_nature_meditations
-                        )
+                        FavoriteCollectionGrid()
                     }
 
                 }
